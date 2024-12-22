@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Azure Service</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, width=device-width">
+	<link rel="shortcut icon" href="https://web.starvend.xyz/logo.ico">
+<script>document.write('<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300,bold&display=swap" rel="stylesheet"/>');</script>
+<style>body{font-family:Noto Sans KR,sans-serif;font-weight:300;word-break:keep-all}.wrapper{-ms-flex-direction:row;flex-direction:row;justify-content:center;margin-left:auto;margin-right:auto;margin-top:100px}.content,.wrapper{display:-ms-flexbox;display:flex}.content{-ms-flex:0 1 auto;flex:0 1 auto;-ms-flex-direction:row;flex-direction:row}.left-icon{margin-right:30px}.left-icon,.main-content{-ms-flex:0 1 auto;flex:0 1 auto}.main-content{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}.error-title{font-size:24px;margin-bottom:32px}.error-message{font-size:14px;margin-bottom:32px}.error-detail{align-self:stretch;background:rgba(0,0,0,.1);font-size:12px;margin-bottom:32px;padding:14px}@media (max-width:600px){.content,.main-content{align-items:center;-ms-flex-direction:column;flex-direction:column}.left-icon{margin-bottom:30px;margin-right:0}.error-message,.error-title{text-align:center}.error-message{padding-left:10px;padding-right:10px}.error-detail{margin-left:10px;margin-right:10px}}</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="content">
+		<div class="left-icon">
+			<img style="width: 160px; height: 120px" src="https://web.starvend.xyz/logo.ico">
+		</div>
+		<div class="main-content">
+			<div class="error-title">현재 사용중인 아이피에서 접근하실 수 없습니다.</div>
+			<div class="error-message">현재 사용하고 계신 아이피는 <b>일반적으로 정상적인 사용자가 사용할 수 없는 IDC(데이터센터) 대역</b> 아이피입니다.<br>해당 아이피 대역은 <b>프록시/VPN 등 아이피 우회수단을 통한 접근을 방지하기 위해 차단</b>되어 있습니다.<br><br>
+혹시 이 차단이 잘못되었다고 생각하신 경우 <b>아래에 표시된 정보와 현재 어떤 장소에서 접근하고 계신지,<br>현재 계약된 인터넷 제공 업체 이름 등</b>을 함께 <b>공식서버로 오셔서</b> 문의해주시기 바랍니다.<br></div>
+			<div class="error-title">You can not access from the current IP.</div>
+			<div class="error-message">The IP you are currently using is <b>usually an IDC (data center) band IP that is generally unavailable to normal users.</b>.<br>The IP range is blocked to prevent access through IP bypass methods such as proxy/VPN.<br>If you believe that this block is in error, please come to the official server and inquire.</b><br><a href="https://starvend.xyz/Azure" class="hidden-link">Discord Server Join</a></b></div>
+
+			<div class="error-detail">
+			IP : <b>{{ip}}</b><br>
+			COUNTRY : <b>{{cu}}</b><br>
+			</div>
+		</div>
+	</div>
+</div>
+<script data-cfasync="false">!function(){"use strict";function e(e){try{if("undefined"==typeof console)return;"error"in console?console.error(e):console.log(e)}catch(e){}}function t(e,t){var r=e.substr(t,2);return parseInt(r,16)}function r(r,n){for(var c="",o=t(r,n),a=n+2;a<r.length;a+=2){var l=t(r,a)^o;c+=String.fromCharCode(l)}try{c=decodeURIComponent(escape(c))}catch(t){e(t)}return function(e){return i.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',i.childNodes[0].getAttribute("href")||""}(c)}function n(t){try{(function(t){for(var n=t.querySelectorAll("a"),o=0;o<n.length;o++)try{var a=n[o],i=a.href.indexOf(c);i>-1&&(a.href="mailto:"+r(a.href,i+c.length))}catch(t){e(t)}})(t),function(t){for(var n=t.querySelectorAll(o),c=0;c<n.length;c++)try{var i=n[c],l=i.parentNode,u=i.getAttribute(a);if(u){var f=r(u,0),d=document.createTextNode(f);l.replaceChild(d,i)}}catch(t){e(t)}}(t),function(t){for(var r=t.querySelectorAll("template"),c=0;c<r.length;c++)try{n(r[c].content)}catch(t){e(t)}}(t)}catch(t){e(t)}}var c="/cdn-cgi/l/email-protection#",o=".__cf_email__",a="data-cfemail",i=document.createElement("div");n(document),function(){var e=document.currentScript||document.scripts[document.scripts.length-1];e.parentNode.removeChild(e)}()}();</script></body>
+</html>
